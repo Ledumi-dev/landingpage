@@ -150,6 +150,12 @@
     .funding-futuresax{width:176px}
     .funding-efre{width:165px}
     @media(max-width:600px){.funding-strip{align-items:flex-start;gap:12px;padding-top:17px}.funding-label{flex-basis:100%}.funding-futuresax{width:min(168px,48vw)}.funding-efre{width:min(150px,43vw)}}
+
+    /* Hero product focus: the figure owns the visual field rather than sitting small in a blank frame. */
+    .hero .device-scene{background:radial-gradient(circle at 50% 35%,#fff 0 31%,#fff8fc 62%,#eef0ff 100%)!important}
+    .hero .device-scene img{object-fit:contain!important;transform:scale(1.58) translateY(7%);transform-origin:50% 51%;transition:transform .3s var(--ease)}
+    @media(max-width:900px){.hero .device-scene img{transform:scale(1.48) translateY(6%)}}
+    @media(max-width:600px){.hero .device-scene{aspect-ratio:1.07/1;border-radius:32px}.hero .device-scene img{transform:scale(1.62) translateY(8%)}}
 </style>
 </head>
 <body>
