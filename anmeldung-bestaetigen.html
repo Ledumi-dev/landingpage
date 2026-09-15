@@ -19,6 +19,22 @@
 .cookie-notice{position:fixed;inset:auto 20px 20px auto;z-index:1000;width:min(510px,calc(100vw - 32px));color:var(--ink);font-family:Nunito,ui-sans-serif,system-ui,sans-serif}.cookie-notice[hidden]{display:none}.cookie-card{border:1px solid rgba(39,23,70,.16);border-radius:25px;background:rgba(255,255,255,.98);padding:24px;box-shadow:0 24px 65px rgba(39,23,70,.24)}.cookie-eyebrow{display:block;margin-bottom:7px;color:var(--orange,#bd4b00);font-size:10px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}.cookie-card h2{margin:0;font-size:24px;letter-spacing:-.04em;line-height:1.05}.cookie-card p{margin:11px 0 0;color:var(--muted);font-size:13px;line-height:1.6}.cookie-details{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}.cookie-details summary{cursor:pointer;color:var(--ink);font-size:13px;font-weight:900}.cookie-details p{font-size:12px}.cookie-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:19px}.cookie-actions button,.cookie-settings{border:0;border-radius:99px;padding:12px 15px;font:inherit;font-size:13px;font-weight:900;cursor:pointer}.cookie-accept{background:var(--orange-bright,#f47a1f);color:var(--cream,#fffcee);box-shadow:0 4px 0 rgba(127,49,0,.25)}.cookie-essential{background:#f3eef6;color:var(--ink);border:1px solid var(--line)!important}.cookie-settings{margin:0;padding:0!important;background:transparent;color:var(--muted);font-size:12px!important;text-decoration:underline;text-underline-offset:3px}.cookie-actions button:hover{transform:translateY(-1px)}.cookie-actions button:focus-visible,.cookie-settings:focus-visible{outline:3px solid var(--blue,#657ef4);outline-offset:3px}@media(max-width:600px){.cookie-notice{inset:auto 14px 14px}.cookie-card{padding:20px;border-radius:21px}.cookie-actions{display:grid;grid-template-columns:1fr}.cookie-actions button{width:100%}}
 .startlist-microcopy{margin:14px 0 0;color:var(--muted);font-size:12px;font-weight:700;line-height:1.45}.product-card .waitlist-card{margin-top:26px}.privacy-pledge{margin-top:20px;padding:18px 19px;border:1px solid #dddff5;border-radius:18px;background:#f4f5ff}.privacy-pledge strong{display:block;color:var(--ink);font-size:14px}.privacy-pledge p{margin:6px 0 0!important;color:var(--muted)!important;font-size:13px!important;line-height:1.55!important}
 
+
+/* Conversion-safe consent: clear, voluntary and compact on small screens. */
+section[id], #vormerken { scroll-margin-top: 100px; }
+@media (max-width:600px) {
+  .cookie-notice{inset:auto 12px 12px;width:calc(100vw - 24px)}
+  .cookie-card{padding:16px 17px;border-radius:20px}
+  .cookie-eyebrow{margin-bottom:4px;font-size:9px}
+  .cookie-card h2{font-size:20px;line-height:1.08}
+  .cookie-card p{margin-top:7px;font-size:12px;line-height:1.48}
+  .cookie-details{margin-top:9px;padding-top:9px}
+  .cookie-details summary{font-size:12px}
+  .cookie-details p{font-size:11px}
+  .cookie-actions{grid-template-columns:1fr 1fr;gap:8px;margin-top:13px}
+  .cookie-actions button{width:100%;padding:11px 8px;font-size:11px;line-height:1.25}
+}
+
 </style>
 </head>
 <body><div class="page"><span class="orb one"></span><span class="orb two"></span><main><aside class="story"><img class="logo" src="assets/LEDUMI_logo-wordmark.svg" alt="Ledumi"><img class="figure" src="assets/1.png" alt=""></aside><section class="content"><span class="eyebrow">Deine Startliste</span><h1>Fast geschafft.</h1><p>Schau jetzt in dein E-Mail-Postfach und bestätige deine Anmeldung mit einem Klick. Erst dann bist du auf der Ledumi-Startliste.</p><ol class="steps"><li class="step done"><span>1</span><div><strong>Anmeldung abgeschickt</strong><small>Deine E-Mail-Adresse ist eingetragen.</small></div></li><li class="step "><span>2</span><div><strong>E-Mail bestätigen</strong><small>Öffne die Nachricht von Ledumi in deinem Postfach.</small></div></li><li class="step "><span>3</span><div><strong>Startvorteil erhalten</strong><small>Nach der Bestätigung informieren wir dich zuerst.</small></div></li></ol><a class="btn" href="https://ledumi.com/">Zur Ledumi-Website <span aria-hidden="true">→</span></a><p class="fine">Bei Ledumi gibt es keinen automatischen Kauf und keine automatische Verlängerung.</p></section></main></div>
@@ -26,7 +42,7 @@
   <div class="cookie-card">
     <span class="cookie-eyebrow">Deine Privatsphäre</span>
     <h2 id="cookie-title">Du entscheidest, was gemessen wird.</h2>
-    <p id="cookie-copy">Ledumi funktioniert ohne Analyse-Cookies. Mit deiner freiwilligen Zustimmung werten wir datensparsam aus, welche Inhalte Familien interessieren und ob die Startliste funktioniert.</p>
+    <p id="cookie-copy">Ledumi nutzt nur erforderliche Speicherung. Analyse aktivieren wir erst mit deiner freiwilligen Zustimmung.</p>
     <details class="cookie-details">
       <summary>Cookie-Details ansehen</summary>
       <p><strong>Erforderlich:</strong> Wir speichern nur deine Cookie-Auswahl lokal im Browser, damit wir sie beim nächsten Besuch berücksichtigen. <strong>Optional:</strong> Google Analytics hilft uns, Seitenaufrufe, Klicks und Startlisten-Anmeldungen zu verstehen. Google Analytics wird erst nach deiner Zustimmung geladen. Es gibt keine Werbe-Personalisierung und keine Google-Ads-Verknüpfung.</p>
